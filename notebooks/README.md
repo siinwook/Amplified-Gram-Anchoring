@@ -6,7 +6,7 @@ markdown replaced by short English section headings, and report-unused experimen
 
 | Notebook | Scope |
 |---|---|
-| `refinement/aga_clean_kaggle_server_run.ipynb` | ImageNet-1K streaming, head calibration, `none` / `gram` / `aga` refinement and checkpoint output |
+| `refinement/aga_refinement.ipynb` | ImageNet-1K streaming, head calibration, `none` / `gram` / `aga` refinement and checkpoint output |
 | `evaluation/aga_full_split_frozen_backbone_evaluation.ipynb` |  VOC 2012, ADE20K, Oxford Pet, NYUv2, CIFAR-100 and Flowers-102 frozen probes |
 | `visualization/aga_post_training_analysis.ipynb` | Figure 7 five-model patch cosine similarities and Figure 1 AGA-H−Gram difference maps |
 
