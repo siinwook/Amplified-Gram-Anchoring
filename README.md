@@ -54,7 +54,7 @@ The qualitative results show stronger within-object or semantically related patc
 ## Reproduction
 
 1. Install dependencies from `requirements.txt` and obtain the [official DINOv2 repository](https://github.com/facebookresearch/dinov2).
-2. Use the [clean training notebook](notebooks/refinement/aga_clean_kaggle_server_run.ipynb) with ImageNet-1K access and a CUDA GPU. Set `HIGHAM_MAX_ITER=0` for AGA or `10` for AGA-H; keep `(b, alpha)=(0.4, 8)` for the main settings.
+2. Use the [refinement_notebook](notebooks/refinement/aga_refinement.ipynb) with ImageNet-1K access and a CUDA GPU. Set `HIGHAM_MAX_ITER=0` for AGA or `10` for AGA-H; keep `(b, alpha)=(0.4, 8)` for the main settings.
 3. Provide trained backbone checkpoints to the [final evaluation notebook](notebooks/evaluation/aga_full_split_frozen_backbone_evaluation.ipynb), select the benchmark tasks and run frozen probes.
 4. Run the [post-training analysis notebook](notebooks/visualization/aga_post_training_analysis.ipynb) for similarity maps.
 
