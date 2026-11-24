@@ -4,7 +4,7 @@
 
 **Amplified Gram Anchoring (AGA)** selectively strengthens patch relationships that are already highly similar in a frozen Gram teacher. It modifies the teacher Gram-matrix target during self-supervised post-training **without adding trainable parameters**. We also evaluate **AGA-H**, which applies a finite-iteration Higham correction to reduce correlation-matrix constraint violations.
 
-Starting from **DINOv2-S/14**, we compare common-initialization refinement for 1,500 iterations using DINO, iBOT, KoLeo and relation losses. We then evaluate frozen representations with lightweight heads on segmentation, depth estimation and image classification benchmarks. Our method is motivated by the Gram Anchoring technique in [DINOv3](https://arxiv.org/abs/2508.10104).
+Starting from **DINOv2-S/14**, we compare common-initialization refinement for 1,500 iterations using DINO, iBOT, KoLeo and relation losses. We then evaluate frozen representations with lightweight heads on segmentation, depth estimation and image classification benchmarks. Our method is motivated by the Gram Anchoring technique in [DINOv3](https://arxiv.org/abs/2508.10104). Full AGA Research Report is avaliable at **[AGA research report (PDF)](report/AGA_Research_Report.pdf)**
 
 ## Method
 
