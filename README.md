@@ -4,7 +4,7 @@
 
 **Amplified Gram Anchoring (AGA)** selectively strengthens patch relationships that are already highly similar in a frozen Gram teacher. It modifies the teacher Gram-matrix target during self-supervised post-training **without adding trainable parameters**. We also evaluate **AGA-H**, which applies a finite-iteration Higham correction to reduce correlation-matrix constraint violations.
 
-Starting from **DINOv2-S/14**, we compare common-initialization refinement for 1,500 iterations using DINO, iBOT, KoLeo and relation losses. We then evaluate frozen representations with lightweight heads on segmentation, depth estimation and image classification benchmarks. Our method is motivated by the Gram Anchoring technique in [DINOv3](https://arxiv.org/abs/2508.10104), but **this is not an exact DINOv3 reproduction**.
+Starting from **DINOv2-S/14**, we compare common-initialization refinement for 1,500 iterations using DINO, iBOT, KoLeo and relation losses. We then evaluate frozen representations with lightweight heads on segmentation, depth estimation and image classification benchmarks. Our method is motivated by the Gram Anchoring technique in [DINOv3](https://arxiv.org/abs/2508.10104).
 
 ## Method
 
@@ -41,7 +41,6 @@ The qualitative results show stronger within-object or semantically related patc
 ├── notebooks/
 │   ├── refinement/            # Final clean Kaggle training notebook
 │   ├── evaluation/            # Final full-split frozen-probe evaluation
-│   ├── ablation/              # Earlier preliminary task evaluations
 │   └── visualization/         # Patch similarity analysis
 ├── results/
 │   ├── README.md              # Concise experimental comparisons
@@ -62,7 +61,7 @@ The `src/` modules extract implementation blocks from these **cleaned copies of 
 
 ## Limitations
 
-Only one backbone scale, one evaluation seed and 1,500 refinement iterations were studied. The Higham procedure uses a finite iteration budget and is **not guaranteed to produce an exactly PSD target**. Some benchmark metrics use the same validation split for epoch selection and reporting; repeat-seed and independent-test validation remain future work.
+Only one backbone scale, one evaluation seed and 1,500 refinement iterations were studied. The Higham procedure uses a finite iteration budget which causes considerable training time cost and is **not guaranteed to produce an exactly PSD target**. Going beyond resource limitations to leverage more diverse datasets and long-term training remains the future work.
 
 ## Report and References
 
