@@ -1,8 +1,6 @@
 # Notebooks
 
-The notebooks are **cleaned copies of the user-supplied final files**. Model calculations,
-training loops and remaining evaluation metrics are preserved; outputs were cleared, Korean
-markdown replaced by short English section headings, and report-unused experiments removed.
+The notebooks are **cleaned copies of the user-supplied final files**.
 
 | Notebook | Scope |
 |---|---|
