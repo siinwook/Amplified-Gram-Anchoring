@@ -65,7 +65,7 @@ Only one backbone scale, one evaluation seed and 1,500 refinement iterations wer
 
 ## Report and References
 
-- **[Full research report (PDF)](report/AGA_Research_Report.pdf)** — *Amplified Gram Anchoring: Selectively Strengthening Patch Relationships for Dense Visual Representations*
+- **[AGA research report (PDF)](report/AGA_Research_Report.pdf)** — *Amplified Gram Anchoring: Selectively Strengthening Patch Relationships for Dense Visual Representations*
 - [DINOv3](https://arxiv.org/abs/2508.10104) — Gram Anchoring motivation
 - [DINOv2](https://arxiv.org/abs/2304.07193) — pretrained ViT-S/14 backbone
 - [Higham (2002)](https://doi.org/10.1093/imanum/22.3.329) — nearest correlation matrix approximation
