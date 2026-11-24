@@ -59,9 +59,13 @@ The qualitative results show stronger within-object or semantically related patc
 
 The `src/` modules extract implementation blocks from these **cleaned copies of the original experiment notebooks**; the original executed notebooks and final report remain the record of the actual experiments. The Python files are intended as reusable, notebook-aligned components. Data sources, checkpoint paths and Kaggle-specific settings require configuration for a new environment. See [notebook guide](notebooks/README.md).
 
+## Compute Resources
+
+This project was conducted using **NVIDIA Tesla T4 GPUs provided through Kaggle's free GPU environment**. Despite limited computational resources, we carried out controlled refinement experiments, Higham correction ablations, and downstream evaluations across multiple benchmarks.
+
 ## Limitations
 
-Only one backbone scale, one evaluation seed and 1,500 refinement iterations were studied. The Higham procedure uses a finite iteration budget which causes considerable training time cost and is **not guaranteed to produce an exactly PSD target**. Going beyond resource limitations to leverage more diverse datasets and long-term training remains the future work.
+Only one backbone scale, one evaluation seed and 1,500 refinement iterations were studied. The Higham procedure uses a finite iteration budget which causes considerable training time cost and is **not guaranteed to produce an exactly PSD target**. Future work should investigate longer refinement schedules, larger and more diverse datasets, and repeated experiments across multiple random seeds.
 
 ## Report and References
 
